@@ -14,28 +14,9 @@ namespace TouchSidesTechnicalAssessment.classes
     internal class MostFrequentWord
     {
         //Instance variables
-        private string path;
         private Dictionary<string, int> words_freq = new Dictionary<string, int>();
         private Dictionary<string, int> words_freq_seven_characters = new Dictionary<string, int>();
         private Dictionary<string, int> words_score = new Dictionary<string, int>();
-
-        //Set method(s)
-        private void setPath(string path)
-        {
-            this.path = path;
-        }
-
-        //Get method(s)
-        private string getPath()
-        {
-            return this.path;
-        }
-
-        //Constructor
-        public MostFrequentWord(string file_path)
-        {
-            setPath(file_path);
-        }
         
         private int calculateWordScore(string word)
         {
@@ -133,16 +114,13 @@ namespace TouchSidesTechnicalAssessment.classes
             return letter_score;
         }
 
-        private void regex_line_splitter(string line)
+        public void regex_line_splitter(string line)
         {
             Regex regex = new Regex("\\w+");
 
-            Match match = regex.Match(line);
-            while (match != null)
-            {
-                string word = match.Value.ToLower().Trim();
-                calculate_word_frequency(word);
-                calulcate_word_score(word);
+            foreach(Match item_match in regex.Matches(line)){
+                calculate_word_frequency(item_match.Value.ToLower().Trim());
+                calulcate_word_score(item_match.Value.ToLower().Trim());
             }
         }
 
@@ -179,6 +157,7 @@ namespace TouchSidesTechnicalAssessment.classes
                 words_score[word] = calculateWordScore(word);
             }
         }
+
         
         public Dictionary<string, int> word_with_highest_score()
         {
