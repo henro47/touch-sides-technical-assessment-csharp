@@ -46,16 +46,18 @@
             // 
             this.pnlUploadFile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlUploadFile.Controls.Add(this.btnUpload);
-            this.pnlUploadFile.Location = new System.Drawing.Point(12, 12);
+            this.pnlUploadFile.Location = new System.Drawing.Point(10, 9);
+            this.pnlUploadFile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlUploadFile.Name = "pnlUploadFile";
-            this.pnlUploadFile.Size = new System.Drawing.Size(776, 125);
+            this.pnlUploadFile.Size = new System.Drawing.Size(679, 94);
             this.pnlUploadFile.TabIndex = 0;
             // 
             // btnUpload
             // 
-            this.btnUpload.Location = new System.Drawing.Point(631, 73);
+            this.btnUpload.Location = new System.Drawing.Point(552, 55);
+            this.btnUpload.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(142, 49);
+            this.btnUpload.Size = new System.Drawing.Size(124, 37);
             this.btnUpload.TabIndex = 0;
             this.btnUpload.Text = "Upload File";
             this.btnUpload.UseVisualStyleBackColor = true;
@@ -70,60 +72,64 @@
             this.pnlShowResult.Controls.Add(this.lblMostSevenCharWordH);
             this.pnlShowResult.Controls.Add(this.txtMostFrequentWord);
             this.pnlShowResult.Controls.Add(this.lblHmostfreqword);
-            this.pnlShowResult.Location = new System.Drawing.Point(12, 153);
+            this.pnlShowResult.Location = new System.Drawing.Point(10, 115);
+            this.pnlShowResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlShowResult.Name = "pnlShowResult";
-            this.pnlShowResult.Size = new System.Drawing.Size(776, 216);
+            this.pnlShowResult.Size = new System.Drawing.Size(679, 162);
             this.pnlShowResult.TabIndex = 1;
             this.pnlShowResult.Visible = false;
             // 
             // txtHighestScore
             // 
             this.txtHighestScore.Enabled = false;
-            this.txtHighestScore.Location = new System.Drawing.Point(358, 97);
+            this.txtHighestScore.Location = new System.Drawing.Point(313, 73);
+            this.txtHighestScore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHighestScore.Name = "txtHighestScore";
-            this.txtHighestScore.Size = new System.Drawing.Size(134, 27);
+            this.txtHighestScore.Size = new System.Drawing.Size(118, 23);
             this.txtHighestScore.TabIndex = 5;
             // 
             // lblHighestScoreH
             // 
             this.lblHighestScoreH.AutoSize = true;
-            this.lblHighestScoreH.Location = new System.Drawing.Point(18, 97);
+            this.lblHighestScoreH.Location = new System.Drawing.Point(16, 73);
             this.lblHighestScoreH.Name = "lblHighestScoreH";
-            this.lblHighestScoreH.Size = new System.Drawing.Size(273, 20);
+            this.lblHighestScoreH.Size = new System.Drawing.Size(227, 15);
             this.lblHighestScoreH.TabIndex = 4;
-            this.lblHighestScoreH.Text = "Most Frequent Word (Seven Characters):";
+            this.lblHighestScoreH.Text = "Highest Scoring Word (Seven Characters):";
             // 
             // txtMostSevenCharWord
             // 
             this.txtMostSevenCharWord.Enabled = false;
-            this.txtMostSevenCharWord.Location = new System.Drawing.Point(358, 52);
+            this.txtMostSevenCharWord.Location = new System.Drawing.Point(313, 39);
+            this.txtMostSevenCharWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMostSevenCharWord.Name = "txtMostSevenCharWord";
-            this.txtMostSevenCharWord.Size = new System.Drawing.Size(134, 27);
+            this.txtMostSevenCharWord.Size = new System.Drawing.Size(118, 23);
             this.txtMostSevenCharWord.TabIndex = 3;
             // 
             // lblMostSevenCharWordH
             // 
             this.lblMostSevenCharWordH.AutoSize = true;
-            this.lblMostSevenCharWordH.Location = new System.Drawing.Point(18, 55);
+            this.lblMostSevenCharWordH.Location = new System.Drawing.Point(16, 41);
             this.lblMostSevenCharWordH.Name = "lblMostSevenCharWordH";
-            this.lblMostSevenCharWordH.Size = new System.Drawing.Size(273, 20);
+            this.lblMostSevenCharWordH.Size = new System.Drawing.Size(220, 15);
             this.lblMostSevenCharWordH.TabIndex = 2;
             this.lblMostSevenCharWordH.Text = "Most Frequent Word (Seven Characters):";
             // 
             // txtMostFrequentWord
             // 
             this.txtMostFrequentWord.Enabled = false;
-            this.txtMostFrequentWord.Location = new System.Drawing.Point(358, 8);
+            this.txtMostFrequentWord.Location = new System.Drawing.Point(313, 6);
+            this.txtMostFrequentWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMostFrequentWord.Name = "txtMostFrequentWord";
-            this.txtMostFrequentWord.Size = new System.Drawing.Size(134, 27);
+            this.txtMostFrequentWord.Size = new System.Drawing.Size(118, 23);
             this.txtMostFrequentWord.TabIndex = 1;
             // 
             // lblHmostfreqword
             // 
             this.lblHmostfreqword.AutoSize = true;
-            this.lblHmostfreqword.Location = new System.Drawing.Point(18, 11);
+            this.lblHmostfreqword.Location = new System.Drawing.Point(16, 8);
             this.lblHmostfreqword.Name = "lblHmostfreqword";
-            this.lblHmostfreqword.Size = new System.Drawing.Size(147, 20);
+            this.lblHmostfreqword.Size = new System.Drawing.Size(119, 15);
             this.lblHmostfreqword.TabIndex = 0;
             this.lblHmostfreqword.Text = "Most Frequent Word:";
             // 
@@ -133,11 +139,12 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 379);
+            this.ClientSize = new System.Drawing.Size(700, 284);
             this.Controls.Add(this.pnlShowResult);
             this.Controls.Add(this.pnlUploadFile);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmMain";
             this.Text = "Main Form";
             this.pnlUploadFile.ResumeLayout(false);
